@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Create Propost</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-step active"  style="--height: ;">
+            <h2 style="--size: 1.25rem;">Qual o nome do site do cliente?</h2>
+            <input type="text" id="site-name" placeholder="Ex: Meu Site">
+
+            <button class="next-btn">Seguinte</button>
+        </div>
+        <div class="form-step">
+            <h2 style="--size: 1.25rem;">Qual o nome do cliente?</h2>
+            <input type="text" id="client-name" placeholder="Ex: João Silva">
+            <button class="next-btn">Seguinte</button>
+        </div>
+        <div class="form-step">
+            <h2 style="--size: 1.1rem;">Nome de quem está atendendo?</h2>
+            <input type="text" id="attendant-name" placeholder="Ex: Maria Oliveira">
+            <button class="submit-btn">Finalizar</button>
+        </div>
+        <div class="form-step final-step">
+            <h2  style="--size: 1.25rem;">Proposta criada com sucesso!</h2>
+            <p  style="--size: 1.1rem;">Copie o link para mandar a proposta ao cliente.</p>
+            <div class="button ">
+                <div class="text-icon">
+                  <i class="bx bx-cloud-upload"></i>
+                  <span class="text">Copiar Link</span>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+</html>
